@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: portal-do-aluno-api
+    runtime: node
+    plan: starter
+    buildCommand: "echo 'sem dependências a instalar'"
+    startCommand: "node server.js"
+    envVars:
+      - key: NODE_VERSION
+        value: 22.5.0
+      - key: DB_PATH
+        value: /data/portal.db
+    disk:
+      name: portal-db
+      mountPath: /data
+      sizeGB: 1

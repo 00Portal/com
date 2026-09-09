@@ -1,0 +1,12 @@
+{
+  "name": "portal-do-aluno-api",
+  "version": "1.0.0",
+  "description": "API do Portal do Aluno — sem dependências externas (usa node:http e node:sqlite)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
